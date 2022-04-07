@@ -1,6 +1,6 @@
 .reviews
   padding: 40px 0 70px 0
-  &__title
+  &-title
     font-style: normal
     font-weight: 700
     font-size: 36px
@@ -37,6 +37,25 @@
         height: 47px
         background-image: url(../img/quote-right.svg)
         background-repeat: no-repeat
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 10px
+      background-position: center
+      border: none
+      background-color: transparent
+      cursor: pointer
+      z-index: 99
+      &--prev
+        background-image: url(../img/arrow-prev-primary.svg)
+        left: 0
+      &--next
+        background-image: url(../img/arrow-next-primary.svg)
+        right: 0
     &__profile
       display: flex
       flex-direction: column
